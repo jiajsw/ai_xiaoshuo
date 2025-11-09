@@ -135,24 +135,22 @@ if __name__ == "__main__":
         "zh-CN-YunzeNeural"
     ]
     # 遍历
-    for voice in voice_types:
-        file_path = "神秘复苏-第1章"
-        output_path = f"{voice}-{file_path}-output.mp3"
-        voice_type = voice
-        # 删除
-        if os.path.exists(output_path):
-            os.remove(output_path)
-        main(file_path, output_path)
+    # for voice in voice_types:
+    #     file_path = "神秘复苏-第1章"
+    #     output_path = f"{voice}-{file_path}-output.mp3"
+    #     voice_type = voice
+    #     # 删除
+    #     if os.path.exists(output_path):
+    #         os.remove(output_path)
+    #     main(file_path, output_path)
+    file_path = rf"D:\做视频\大号B站\13-神秘复苏\txt\第0001章-天狗食日，穿越万历.txt"
+    voice_type = "zh-CN-YunzeNeural"
+    # 从 file_path 中获取文件名
+    file_name = os.path.basename(file_path)
+    output_path = f"{voice_type}-{file_name}.mp3"
 
-    # file_path = "神秘复苏-第1章"
-    # voice_type = "zh-CN-YunzeNeural"
-    # output_path = f"{voice_type}-{file_path}-output.mp3"
-
-    # 修改全局 rate_speed
-
-    # global rate_speed
-    # speed = "+100%"
-    # # 删除
-    # if os.path.exists(output_path):
-    #     os.remove(output_path)
-    # main(file_path, output_path, speed=speed)
+    speed = "+30%"
+    # 删除
+    if os.path.exists(output_path):
+        os.remove(output_path)
+    main(file_path, output_path, speed=speed)

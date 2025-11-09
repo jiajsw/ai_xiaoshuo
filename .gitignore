@@ -1,6 +1,4 @@
 /.venv
-/zh-CN-YunfengNeural-神秘复苏-第1章-output.mp3
-/zh-CN-YunhaoNeural-神秘复苏-第1章-output.mp3
-/zh-CN-YunzeNeural-神秘复苏-第1章-output.mp3
 /神秘复苏-第1章
-/神秘复苏-第1章-output.mp3
+*.mp3
+*.png
