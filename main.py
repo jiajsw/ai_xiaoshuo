@@ -98,7 +98,7 @@ def post_process(output_path: str):
     for i in reslt:
         merged_audio += i
         # 添加 0.2 秒的间隔
-        merged_audio += AudioSegment.silent(duration=200)
+        merged_audio += AudioSegment.silent(duration=100)
     # 保存合并后的音频
     merged_audio.export(output_path, format="mp3")
 
@@ -125,10 +125,10 @@ if __name__ == "__main__":
         "zh-CN-YunfengNeural",
         "zh-CN-YunhaoNeural",
         "zh-CN-YunjianNeural",
-        "zh-CN-YunjieNeural",
+        # "zh-CN-YunjieNeural",
         "zh-CN-YunxiNeural",
-        "zh-CN-YunxiaNeural",
-        "zh-CN-YunxiaoMultilingualNeural",
+        # "zh-CN-YunxiaNeural",
+        "zh-CN-YunxiaoMultilingualNeural",  # √
         "zh-CN-YunyangNeural",
         "zh-CN-YunyeNeural",
         "zh-CN-YunyiMultilingualNeural",
@@ -143,13 +143,16 @@ if __name__ == "__main__":
     #     if os.path.exists(output_path):
     #         os.remove(output_path)
     #     main(file_path, output_path)
-    file_path = rf"D:\做视频\大号B站\13-神秘复苏\txt\第0001章-天狗食日，穿越万历.txt"
-    voice_type = "zh-CN-YunzeNeural"
-    # 从 file_path 中获取文件名
-    file_name = os.path.basename(file_path)
-    output_path = f"{voice_type}-{file_name}.mp3"
+    # txt = "第0010章-贪腐枉法，日讲太甲"
+    txt = rf"txt\第0049章-南来北往，诈以邀赏.txt"
+    file_path = rf"D:\做视频\大号B站\136-万历明君\{txt}"
+    # file_path = rf"C:\Users\jsw\Documents\00project\wen_an\团结壬与LGBT.txt"
+    voice_type = "zh-CN-YunjianNeural"
+    file_name = os.path.basename(file_path).replace(".txt", "")
+    output_path = fr"D:\做视频\大号B站\136-万历明君\mp3\{file_name}-{voice_type}.mp3"
+    # output_path = fr"{file_name}-{voice_type}.mp3"
 
-    speed = "+30%"
+    speed = "+60%"
     # 删除
     if os.path.exists(output_path):
         os.remove(output_path)
