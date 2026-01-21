@@ -144,7 +144,7 @@ if __name__ == "__main__":
     #         os.remove(output_path)
     #     main(file_path, output_path)
     # txt = "第0010章-贪腐枉法，日讲太甲"
-    txt = rf"txt\第0049章-南来北往，诈以邀赏.txt"
+    txt = rf"txt\第0059章-心宁意懒，旧事重演.txt"
     file_path = rf"D:\做视频\大号B站\136-万历明君\{txt}"
     # file_path = rf"C:\Users\jsw\Documents\00project\wen_an\团结壬与LGBT.txt"
     voice_type = "zh-CN-YunjianNeural"
