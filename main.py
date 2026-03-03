@@ -144,15 +144,16 @@ if __name__ == "__main__":
     #         os.remove(output_path)
     #     main(file_path, output_path)
     # txt = "第0010章-贪腐枉法，日讲太甲"
-    txt = rf"txt\第0059章-心宁意懒，旧事重演.txt"
+    txt = rf"txt\第0092章-阴风晦冥，恶贯祸盈.txt"
     file_path = rf"D:\做视频\大号B站\136-万历明君\{txt}"
+    # file_path = rf"C:\Users\jsw\Documents\00project\wen_an\0020-清朝政府是中国人的政府吗？.txt"
     # file_path = rf"C:\Users\jsw\Documents\00project\wen_an\团结壬与LGBT.txt"
     voice_type = "zh-CN-YunjianNeural"
     file_name = os.path.basename(file_path).replace(".txt", "")
     output_path = fr"D:\做视频\大号B站\136-万历明君\mp3\{file_name}-{voice_type}.mp3"
     # output_path = fr"{file_name}-{voice_type}.mp3"
 
-    speed = "+60%"
+    speed = "+55%"
     # 删除
     if os.path.exists(output_path):
         os.remove(output_path)
