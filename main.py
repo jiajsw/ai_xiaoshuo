@@ -127,7 +127,10 @@ if __name__ == "__main__":
         "zh-CN-YunhaoNeural",
         "zh-CN-YunjianNeural",
         # "zh-CN-YunjieNeural",
+        # "zh-CN-YunjieNeural",
         "zh-CN-YunxiNeural",
+        # "zh-CN-YunxiaNeural",
+        "zh-CN-YunxiaoMultilingualNeural",  # √
         # "zh-CN-YunxiaNeural",
         "zh-CN-YunxiaoMultilingualNeural",  # √
         "zh-CN-YunyangNeural",
