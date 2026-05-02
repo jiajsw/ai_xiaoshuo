@@ -99,7 +99,6 @@ def post_process(output_path: str):
         merged_audio += i
         # 添加 0.2 秒的间隔
         merged_audio += AudioSegment.silent(duration=100)
-        merged_audio += AudioSegment.silent(duration=100)
     # 保存合并后的音频
     merged_audio.export(output_path, format="mp3")
 
@@ -147,7 +146,7 @@ if __name__ == "__main__":
     #     if os.path.exists(output_path):
     #         os.remove(output_path)
     #     main(file_path, output_path)
-    file_path = rf"D:\做视频\大号B站\13-神秘复苏\txt\第0001章-天狗食日，穿越万历.txt"
+    file_path = rf"C:\Users\jsw\Documents\00project\wen_an\0048-君王死社稷.txt"
     voice_type = "zh-CN-YunzeNeural"
     # 从 file_path 中获取文件名
     file_name = os.path.basename(file_path)
