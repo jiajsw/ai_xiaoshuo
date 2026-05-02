@@ -161,3 +161,18 @@ if __name__ == "__main__":
 
     # 完成 打印文件名 file_path
     print(f"完成：{file_name}")
+
+    file_path = rf"C:\Users\jsw\Documents\00project\wen_an\0048-君王死社稷.txt"
+    voice_type = "zh-CN-YunzeNeural"
+    # 从 file_path 中获取文件名
+    file_name = os.path.basename(file_path)
+    output_path = f"{voice_type}-{file_name}.mp3"
+
+    speed = "+55%"
+    # 删除
+    if os.path.exists(output_path):
+        os.remove(output_path)
+    main(file_path, output_path, speed=speed)
+
+    # 完成 打印文件名 file_path
+    print(f"完成：{file_name}")
