@@ -146,7 +146,7 @@ if __name__ == "__main__":
     #     if os.path.exists(output_path):
     #         os.remove(output_path)
     #     main(file_path, output_path)
-    txt = rf"txt\第0176章-走南闯北，登山涉水.txt"
+    txt = rf"txt\第0184章-阴阳顺位，悬疣附赘.txt"
     # txt = rf"txt\第0141章-征其质地，推其常变.txt"
     file_path = rf"D:\做视频\大号B站\136-万历明君\{txt}"
     voice_type = "zh-CN-YunjianNeural"
